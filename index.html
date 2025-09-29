@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta -->
+    <title>Sorriso Di speranza</title>
+    <meta
+      name="description"
+      content="Sorriso Di speranza is a trusted logistics company in Ghana specializing in sea freight, air freight, warehousing, and container shipping. We deliver reliable transport solutions across West & Middle East Africa."
+    />
+    <meta
+      name="keywords"
+      content="Sorriso Di speranza, Shipping Ghana, Freight Forwarding, Sea Freight, Air Freight, Container Shipping, Warehousing, Logistics Ghana, Africa Transport"
+    />
+    <meta name="author" content="Sorriso Di speranza" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="" />
+
+    <!-- Open Graph (Facebook, LinkedIn) -->
+    <meta
+      property="og:title"
+      content="Sorriso Di speranza | Shipping & Freight Company in Ghana"
+    />
+    <meta
+      property="og:description"
+      content="Trusted logistics company in Ghana specializing in sea & air freight, warehousing, and container shipping."
+    />
+    <meta property="og:image" content="assets/ngo_logo.png" />
+    <meta property="og:url" content="https://www.benjamincargo.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sorriso Di speranza" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Sorriso Di speranza | Trusted Shipping Company in Ghana"
+    />
+    <meta
+      name="twitter:description"
+      content="Sea & air freight, warehousing, and container shipping solutions across West & Middle East Africa."
+    />
+    <meta name="twitter:image" content="assets/ngo_logo.png" />
+
+    <!-- Favicon / Site Icons -->
+    <link rel="icon" type="icon/favicon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/png" href="assets/favicon.ico?v=2" />
+
+    <!-- CSS & JS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.2/dist/sweetalert2.min.css"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.2/dist/sweetalert2.all.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header
+      x-data="{ scrolled: false, open: false }"
+      x-init="
+    window.addEventListener('scroll', () => scrolled = window.scrollY > 10);
+  "
+      :class="scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'"
+      class="fixed top-0 left-0 w-full z-50 transition-all duration-700 ease-in-out"
+    >
+      <div class="px-6 lg:px-12 transition-all duration-700 ease-in-out">
+        <nav
+          class="flex justify-between items-center text-gray-800 backdrop-blur-md bg-white/90 px-4 md:px-6 py-3 transition-all duration-700 ease-in-out"
+          :class="scrolled ? 'rounded-none' : 'rounded-xl'"
+        >
+          <div class="h-16">
+            <a href="">
+              <img src="assets/ngo_logo.png" alt="" class="w-20 h-20" />
+            </a>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex gap-6 text-sm font-medium items-center">
+            <a
+              href="index.php"
+              class="hover:text-blue-700 transition duration-300"
+              >Home</a
+            >
+            <a
+              href="about-us.php"
+              class="block hover:text-blue-700 transition duration-300"
+              >About Us</a
+            >
+            <a
+              href="contact.php"
+              class="block hover:text-blue-700 transition duration-300"
+              >Contact</a
+            >
+            <a
+              href="customers/login.php"
+              target="_blank"
+              class="bg-blue-700 rounded text-white flex justify-center items-center p-2 px-3 block transition duration-300"
+              >Volunteer</a
+            >
+          </div>
+
+          <!-- Hamburger (Mobile) -->
+          <div class="md:hidden">
+            <button
+              @click="open = !open"
+              class="bg-blue-700 text-white p-2 rounded focus:outline-none"
+            >
+              <svg
+                x-show="!open"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+              <svg
+                x-show="open"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                x-cloak
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+        </nav>
+
+        <!-- Mobile Menu Dropdown -->
+        <div
+          x-show="open"
+          x-transition
+          class="md:hidden mt-2 rounded bg-white w-full text-black px-4 py-3 space-y-3"
+        >
+          <a
+            href="index.php"
+            class="block hover:text-blue-700 transition duration-300"
+            >Home</a
+          >
+          <a
+            href="about-us.php"
+            class="block hover:text-blue-700 transition duration-300"
+            >About Us</a
+          >
+          <a
+            href="contact.php"
+            class="block hover:text-blue-700 transition duration-300"
+            >Contact</a
+          >
+          <a
+            href=""
+            class="bg-blue-700 rounded text-white p-3 block transition duration-300"
+            >Volunteer</a
+          >
+        </div>
+      </div>
+    </header>
+    <section class="text-white home-hero w-full h-screen flex items-center">
+      <div
+        class="h-full flex flex-col justify-center px-4 md:px-8 lg:max-w-3xl"
+      >
+        <h1
+          class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mt-40"
+        >
+          Show Your Care
+        </h1>
+        <p class="text-center mt-4 text-base">
+          Luis lost everything as floods destroyed his home. In his small boat,
+          Luis rescued dozens. CARE was there with urgent aid to help everyone
+          survive. Stand with us today to have your gift 3X matched.
+        </p>
+        <div class="flex justify-center items-center mt-5">
+          <a
+            href="customers/login.php"
+            target="_blank"
+            class="bg-blue-700 w-full md:w-48 rounded text-white flex justify-center items-center p-3 block transition duration-300"
+            >Make A Pledge</a
+          >
+        </div>
+      </div>
+    </section>
+    <div class="text-center mt-16 mb-3">
+      <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold">
+        Every day, together with you, CARE saves lives and helps millions of
+        people find the way to a better life worldwide.
+      </h3>
+    </div>
+    <div class="px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div class="card-1 h-80 relative px-5 text-white">
+        <div class="absolute bottom-2 m-auto">
+          <h3 class="text-lg md:text-2xl lg:text-3xl font-bold">
+            We're efficient.
+          </h3>
+          <p class="text-base">
+            Your donation does more when you give it to CARE. 90% of the money
+            CARE spends goes toward our lifesaving work that saves and
+            transforms lives.
+          </p>
+        </div>
+      </div>
+      <div class="card-2 h-80 relative px-5 text-white">
+        <div class="absolute bottom-2 m-auto">
+          <h3 class="text-lg md:text-2xl lg:text-3xl font-bold">
+            We're efficient.
+          </h3>
+          <p class="text-base">
+            Your donation does more when you give it to CARE. 90% of the money
+            CARE spends goes toward our lifesaving work that saves and
+            transforms lives.
+          </p>
+        </div>
+      </div>
+      <div class="card-3 h-80 relative px-5 text-white">
+        <div class="absolute bottom-2 m-auto">
+          <h3 class="text-lg md:text-2xl lg:text-3xl font-bold">
+            We're efficient.
+          </h3>
+          <p class="text-base">
+            Your donation does more when you give it to CARE. 90% of the money
+            CARE spends goes toward our lifesaving work that saves and
+            transforms lives.
+          </p>
+        </div>
+      </div>
+      <div class="card-4 h-80 relative px-5 text-white">
+        <div class="absolute bottom-2 m-auto">
+          <h3 class="text-lg md:text-2xl lg:text-3xl font-bold">
+            We're efficient.
+          </h3>
+          <p class="text-base">
+            Your donation does more when you give it to CARE. 90% of the money
+            CARE spends goes toward our lifesaving work that saves and
+            transforms lives.
+          </p>
+        </div>
+      </div>
+    </div>
+    <section class="px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-5 mt-16">
+      <div class="">
+        <img
+          src="https://images.pexels.com/photos/1739842/pexels-photo-1739842.jpeg"
+          alt=""
+        />
+      </div>
+      <div class="flex flex-col justify-center space-y-3">
+        <h3 class="text-lg md:text-3xl lg:text-4xl font-bold uppercase">
+          We end poverty by focusing on hunger, health, education, and equality,
+          daily and in times of crisis.
+        </h3>
+        <a
+          href="customers/login.php"
+          target="_blank"
+          class="bg-blue-700 rounded text-white flex justify-center items-center p-3 px-3 block transition duration-300 font-bold uppercase"
+          >Learn More About Our Work</a
+        >
+      </div>
+    </section>
+    <section
+      class="mt-16 bg-blue-900 text-white text-center p-6 px-4 md:px-8 space-y-3"
+    >
+      <h4 class="uppercase text-2xl font-bold mt-5">
+        Your gift is TRIPLED to save lives!
+      </h4>
+      <p class="mb-4">
+        Time is running out to make a difference. Every $1 you give rushes 3X
+        the aid to families fighting to survive in the face of hunger,
+        displacement, and conflict. Triple your impact today.
+      </p>
+      <div class="flex justify-center items-center">
+        <a
+          href=""
+          target="_blank"
+          class="bg-white text-blue-600 rounded flex justify-center items-center p-2 px-4 block transition duration-300 font-bold uppercase"
+          >Join Us</a
+        >
+      </div>
+    </section>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
