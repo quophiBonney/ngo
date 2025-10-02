@@ -15,7 +15,7 @@ h4 {
   background: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.973),
-      rgba(0, 0, 0, 0.2) /* lighter on the right */
+      rgba(0, 0, 0, 0.1) /* lighter on the right */
     ),
     url("https://images.pexels.com/photos/13793194/pexels-photo-13793194.jpeg")
       no-repeat center center/cover;
@@ -24,22 +24,22 @@ h4 {
   backdrop-filter: blur(1px);
 }
 .card-1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
     url("https://images.pexels.com/photos/33993454/pexels-photo-33993454.jpeg")
       no-repeat center center/cover;
 }
 .card-2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
     url("https://images.pexels.com/photos/10823286/pexels-photo-10823286.jpeg")
       no-repeat center center/cover;
 }
 .card-3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
     url("https://images.pexels.com/photos/14351882/pexels-photo-14351882.jpeg")
       no-repeat center center/cover;
 }
 .card-4 {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
     url("https://images.pexels.com/photos/14325744/pexels-photo-14325744.jpeg")
       no-repeat center center/cover;
 }
